@@ -1,0 +1,144 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a2e; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+.container {
+    background: #162447; /* Fondo ligeramente más claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.3), 0 0 15px rgba(0, 0, 255, 0.2); /* Efecto más sutil */
+    width: 90%; /* Porcentaje para pantallas pequeñas */
+    max-width: 400px; /* Límite para pantallas grandes */
+    text-align: center;
+    color: #ffffff;
+    box-sizing: border-box; /* Asegura que los inputs no desborden */
+}
+
+/* Títulos */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #d0f8ff; /* Azul más suave */
+    text-shadow: 0 0 5px #00aaff, 0 0 10px #00aaff; /* Menos brillo */
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #00aaff; /* Azul más suave */
+    text-align: left;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #1f4068; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    box-shadow: inset 0 0 5px rgba(0, 170, 255, 0.5); /* Sombra interna más ligera */
+    box-sizing: border-box; /* Previene desbordes */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.7); /* Enfoque más tenue */
+}
+
+button {
+    padding: 12px;
+    background-color: #00aaff; /* Azul suave */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 0 0 15px rgba(138, 199, 229, 0.5); /* Efecto más discreto */
+    background-color: #7cc5e9; /* Azul más oscuro */
+}
+
+/* Mensajes de error */
+.error {
+    color: #ff4d4d; /* Rojo */
+    font-size: 0.9rem;
+    text-shadow: 0 0 5px #ff4d4d; /* Suave brillo rojo */
+}
+
+/* Página de éxito */
+.success {
+    font-size: 1.2rem;
+    color: #00ff87; /* Verde más sutil */
+    text-shadow: 0 0 8px #00ff87; /* Brillo discreto */
+}
+
+a {
+    text-decoration: none;
+    color: #00aaff; /* Azul más suave */
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #0088cc; /* Azul más oscuro */
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Ajuste para pantallas medianas */
+    }
+    
+    button {
+        font-size: 0.9rem;
+        padding: 10px; /* Botones más pequeños */
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 0.9rem;
+        padding: 10px; /* Inputs más pequeños */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Ajuste para móviles */
+    }
+    
+    .container {
+        padding: 15px; /* Menos espacio para móviles */
+    }
+    
+    button {
+        font-size: 0.8rem;
+        padding: 8px; /* Botones más compactos */
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 0.8rem;
+        padding: 8px; /* Inputs más compactos */
+    }
+}
