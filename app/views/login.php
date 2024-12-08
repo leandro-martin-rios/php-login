@@ -22,3 +22,5 @@
     </div>
 </body>
 </html>
+
+<script src="js/scripts.js"></script>
